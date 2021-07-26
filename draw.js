@@ -64,20 +64,20 @@ const getPlanetForOptions = (radius, velocity, orbitRadius, color) =>
 
 // let planets;
 
-function init() {
+const init = () => {
 
   //radius(size),velocity(speed),orbitRadius, color
-  var sun = getPlanetForOptions(25, 0, 0, "#FEE12B");
-  var mercury = getPlanetForOptions(8, 25, 55, "#DBCECA");
-  var venus = getPlanetForOptions(15, 9.76, 90, "#A0898F");
-  var earth = getPlanetForOptions(15.3, 6.009, 130, "#0077be");
-  var mars = getPlanetForOptions(10, 3.20, 185, "#c92118");
+  const sun = getPlanetForOptions(25, 0, 0, "#FEE12B");
+  const mercury = getPlanetForOptions(8, 25, 55, "#DBCECA");
+  const venus = getPlanetForOptions(15, 9.76, 90, "#A0898F");
+  const earth = getPlanetForOptions(15.3, 6.009, 130, "#0077be");
+  const mars = getPlanetForOptions(10, 3.20, 185, "#c92118");
 
   planets.push(sun, mercury, venus, earth, mars);
 }
 
 // Animation Loop
-function animate() {
+const animate = () => {
 
   requestAnimationFrame(animate);
 
@@ -90,7 +90,7 @@ function animate() {
   });
 }
 
-function dayCount() {
+const dayCount = () => {
   count++;
   document.getElementById("counter").innerHTML = 'Days up to 687: ' + '<span class="count">' + count + '</span>';
 
