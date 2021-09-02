@@ -1,3 +1,5 @@
+
+
 const canvas = document.getElementById('solarS');
 const c = canvas.getContext('2d');
 
@@ -5,7 +7,6 @@ canvas.width = 500;
 canvas.height = 450;
 
 const planets = [];
-
 let count = 0;
 const speed = 37.5;
 
@@ -103,3 +104,5 @@ const dayCount = () => {
 init();
 animate();
 dayCount();
+
+
