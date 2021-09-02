@@ -87,7 +87,7 @@ const animate = () => {
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   planets.forEach(function (planet) {
-    planet.update(); //saves changes
+    planet.update();
   });
 }
 
